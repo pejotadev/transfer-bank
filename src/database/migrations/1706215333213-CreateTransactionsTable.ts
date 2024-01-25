@@ -21,11 +21,13 @@ export class CreateTransactionsTable1706215333213 implements MigrationInterface 
                 },
                 {
                     name: "payer",
-                    type: "bigint"
+                    type: "char",
+                    length: "36"
                 },
                 {
                     name: "payee",
-                    type: "bigint"
+                    type: "char",
+                    length: "36"
                 },
                 {
                     name: "timestamp",
