@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:3420
+
+POST {{baseUrl}}/users/
+Content-Type: application/json
+
+{
+    "full_name": "John Nixon",
+    "email": "john@nixon.com",
+    "password": "123456",
+    "cpf_cnpj": "12345678901",
+    "user_type": "common"
+}
+
+###
+POST {{baseUrl}}/users/add-balance/5d957d33-a2eb-4d90-a7fa-4c7fd9ebae9f
+Content-Type: application/json
+
+{
+    "balance": 100.10
+}
+
+###
+GET {{baseUrl}}/users/09401707600
+
+###
+
+

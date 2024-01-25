@@ -1,6 +1,7 @@
 import { DATA_SOURCE } from '../constants';
 import { DataSource } from 'typeorm';
 import databaseConfig from './database.config';
+import { User } from 'src/users/entity/user.entity';
 
 const env = process.env.NODE_ENV || 'development';
 const validEnvironments = ['development', 'test', 'production'];
@@ -22,6 +23,7 @@ export const databaseProviders = [
           ...config,
           entities: [
            'src/modules/**/entity/*.entity.ts',
+           User
           ],
           synchronize: false,
         });
