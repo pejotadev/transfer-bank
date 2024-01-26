@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Put, Body, Param } from '@nestjs/common';
-import { UsersService } from '../services/users.service';
-import { User } from '../entity/user.entity';
+import { UsersService } from './users.service';
+import { User } from './entities/user.entity';
 import * as bcrypt from 'bcrypt';
-import { CreateUserDto } from '../dtos/create-user.dto';
-import { UserDto } from '../dtos/user.dto';
+import { CreateUserDto } from './dto/create-user.dto';
+import { UserDto } from './dto/user.dto';
 import Decimal from 'decimal.js';
 
 @Controller('users')
